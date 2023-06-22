@@ -7,8 +7,7 @@
 main {
     background-image: url(../img/sw-bg.png);
     background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 /* image */
@@ -16,23 +15,68 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    margin: 2rem;
 }
 
 #border {
     width: 25rem;
+    border-radius: 5%;
 }
 
 /* stickers */
 .stickers{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    gap: 2rem;
+    grid-template-areas:
+    "title title"
+    "s1 s2"
+    "s3 s4"
+    "ps ps";
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 3rem;
+    grid-area: title;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14pt;
+    color: #de8347;
 }
 
 .card {
-    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15%;
+    width: 20rem;
+    height: 20rem;
 }
 
+#sticker1 {
+    grid-area: s1;
+}
+#sticker2 {
+    grid-area: s2;
+}
+#sticker3 {
+    grid-area: s3;
+}
+#sticker4 {
+    grid-area: s4;
+}
+
+input {
+    width: 6rem;
+    margin: 1rem;
+}
 /* password */
