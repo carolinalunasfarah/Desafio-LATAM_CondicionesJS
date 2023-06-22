@@ -1,12 +1,11 @@
 * {
-    font-family: 'Press Start 2P', cursive;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Press Start 2P", cursive;
     margin: 0;
 }
 
 main {
     background-image: url(../img/sw-bg.png);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: repeat;
 }
 
@@ -15,7 +14,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 #border {
@@ -24,16 +23,16 @@ main {
 }
 
 /* stickers */
-.stickers{
+.stickers {
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     grid-template-areas:
-    "title title"
-    "s1 s2"
-    "s3 s4"
-    "ps ps";
+        "title title"
+        "s1 s2"
+        "s3 s4"
+        "ps ps";
 }
 
 .title {
@@ -46,7 +45,6 @@ main {
 }
 
 h3 {
-    font-family: 'Press Start 2P', cursive;
     font-size: 14pt;
     color: #de8347;
 }
@@ -79,4 +77,58 @@ input {
     width: 6rem;
     margin: 1rem;
 }
+
 /* password */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/sw-pass.jpg);
+    background-size: contain;
+    background-position: center;
+    border-radius: 5rem;
+    height: 15rem;
+    width: 35rem;
+}
+
+.pwtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 3rem;
+    width: 25rem;
+    font-size: 10pt;
+    color: #de8347;
+}
+
+select, option, button {
+    font-family: "Roboto", sans-serif;
+    color: #de8347;
+    font-weight: 900;
+}
+
+.pwselect {
+    margin: 2rem;
+}
+
+select {
+    width: 4rem;
+    height: 4rem;
+    font-size: 18pt;
+    text-align: center;
+}
+
+button {
+    height: 3rem;
+    width: 8rem;
+    font-size: 18pt;
+}
