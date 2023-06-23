@@ -21,7 +21,6 @@ else {
 //     {borderChange.style.border= "none";}
 // });
 
-
 // stickers
 let stickerTotal = document.querySelector("#sTotal");
 
