@@ -9,18 +9,6 @@ else {
     borderChange.classList.add("border") }
 })
 
-
-// // OPTION
-// let borderChange = document.querySelector("#borderChange");
-
-// borderChange.addEventListener ("click", () => {
-//     if (borderChange.style.border = "none")
-//     {borderChange.style.border= "0.25rem #e07229 solid";}
-
-//     else if (borderChange.style.border = "0.25rem #e07229 solid")
-//     {borderChange.style.border= "none";}
-// });
-
 // stickers
 let stickerTotal = document.querySelector("#sTotal");
 
